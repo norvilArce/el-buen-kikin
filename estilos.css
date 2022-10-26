@@ -1,510 +1,329 @@
-/*setear la pagina*/
+
+/* Eliminar el margen y espaciado interno predeterminado */
 * {
-    margin: 20px;
-    padding: 10px;
-    margin: auto;
-}
+    margin: 0;
+    padding: 0;
+ }
+ 
+ /* Declaración de variables */
+ :root {
+    --color1:#d93030;
+    --color2:#c95757;
+    --color3:#182940;
+    --color4:#ff0000;
+    --color-gris-oscuro:#454545;
+ }
+ 
+ 
+ /* Selector de estilo de tipo HTML */
+ body {
+    color:var(--color5); /* Color del texto */
+    background-color: white; /* Color del fondo */
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ h1 {
+    font-size: 48px; /* Tamaño de la letra */
+    font-weight: 900; /* Grosor de la letra */
+    text-transform: capitalize;
+    text-align: center;
+ }
+ 
+ h2 {
+    font-size: 40px;
+    font-weight: 400;
+ }
+ 
+ h3 {
+    padding-right: 100%;
+    font-size: 15px;
+    color: gray;
+    font-weight: 150; /* Grosor de la letra */
 
-body {
-    width: 90%;
-    max-width: 1500px;
-    margin: auto;
-}
+ }
 
+ h4{
+    margin-left: 70%;
+    font-size: 15px;
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 150;
+ }
+ 
+ h5{
+    margin-left: 70%;
+    font-size: 15px;
+    color: rgb(202, 29, 29);
+    font-weight: 550;
+ }
+ img {
+    /* Eliminar el espacio predetermindo que aparece debajo de la imagen */
+    display: block;
+ }
+ 
+/*h1, h2, h3 {
+    margin-bottom: 10px;
+ }
+ 
+ p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+ }
+ 
+ a {
+    color: var(--color1);
+    text-decoration: none;
+ }
+ 
+ 
+ 
+/*setear la pagina*/
+
+body{
+    width:90%;
+    max-width:1500px;
+    margin:auto;
+}
 /*header*/
-#logo img {
+#logo img{
     height: 80px;
     width: 80px;
-
+    
 }
 
-header {
+header{
     display: flex;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: #f11004;
+    background-color:   #f11004;
 }
-
 .titulo2 {
     text-align: justify;
     padding-bottom: 3px;
     padding-top: 10px;
-    color: #ffffff;
-    font-size: 19px;
+    color:#ffffff;
+    font-size:19px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
+   position: absolute;
     top: 30px;
-    left: 20%;
-
+  left:20%;
 }
 
-.imgs {
-    height: 90px;
-}
-
-.cuadro {
-    height: 90px;
-    line-height: 90px;
-    width: 120px;
-    text-align: center;
-    color: #ffffff;
-
-}
-
-.cuadro a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.cuadro a:hover {
-    color: #e19390;
-    font-size: 13px;
-}
-
-.cuadro:hover {
-    color: #ce2626;
-    font-size: 13px;
-}
-
-.icon-sphere {
-    color: #ffffff;
-}
-
-.icon-users {
-    color: #ffffff;
-}
-
-.icon-facebook2 {
-    color: #ffffff;
-}
-
-.icon-instagram {
-    color: #ffffff;
-}
-
-.icon-youtube2 {
-    color: #ffffff;
-}
-
-section {
+/* Selectores de tipo CLASS */
+.espaciado {
+    padding-top: 90px;
+    padding-bottom: 90px;
+ }
+ 
+ .contenedor {
+    /* Ancho máximo para la caja contenedora */
+    max-width: 1200px;
+ 
+    /* Centra horizontalmente la caja contenedora */
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .fila {
+    /* Coloca las cajas internas, una al lado de la otra, en dirección de una fila */
     display: flex;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
+ 
+    /* Truco: Elimina el espacio izquierdo de la primera caja y 
+    el espacio derecho de la última caja hijo */
+    margin-left: -15px;
+    margin-right: -15px;
+ }
+ 
+ .columna {
+    flex-basis: 0; /* Ancho mínimo para una caja hijo */
+    flex-grow: 1; /* Ajusta el ancho proporcionalmente a cada una de las cajas hijo */
+ 
+    /* Espacio interno para separar una caja de la otra */
+    padding-left: 15px;
+    padding-right: 15px;
+ }
 
-.cuadrod {
-    height: 230px;
-    line-height: 80px;
-    width: 210px;
-    padding-bottom: 25px;
-    color: #ffffff;
-    background-color: #ff0000;
-    border-style: solid;
-    border-width: 3px;
-    font-size: 16px;
-}
+ .img-ajustar {
+    width: 60%; /* Permite ajustar el ancho de la imagen al ancho de la caja padre */
+    height: auto; /* Ajusta proporcionalmente la altura según el ancho */
+ }
 
-.cuadrod:hover {
-    background-color: #ffffff;
-    color: #ff0000;
-    font-size: 19px;
-}
-
-#texto-fotos {
-    margin-top: -50px;
-    text-align: center;
-    line-height: 20px;
-}
-
-/*contener*/
-#contenedor {
+ .alinear-vertical {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .texto-enorme {
+    font-size: 38px;
+ 
+    /* Unidad de medida porcentual respecto al tamaño de la letra */
+    line-height: 1.2em; /* Interlineado */
+ 
+    /* Efecto de sombra en el texto */
+    text-shadow: 4px 4px 2px rgba(253, 252, 240, 0.6);
+ }
+ 
+ .texto-resaltado {
+    color: white;
+    font-weight: bold; /* negrita */
+ }
+ 
+ div.galeria{
+    margin: 10px 10px;
+    float: left;
+    width: 200px;
+    border: 1px solid rgb(209, 205, 205);
 }
 
-.img1 img {
-    width: 1200px;
-
-}
-
-/*contenedor*/
-#contenedorr {
-    display: flex;
-}
-
-.img0 img {
-    width: 240px;
-}
-
-#frase {
-    font-size: 18px;
-    font-weight: bolder;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    color: #ffffff !important;
-    text-align: center;
-    background-color: #ff0000;
+div.galeria img{
     width: 100%;
+    height: auto;
 }
 
-#cuadro_central {
+div.galeria:hover{
+    border: 1px solid black;
+}
+
+div.pie{
+    text-align: center;
+}
+/* Ajusta el ancho de la caja al 66.66% del tamaño de su contenedor */
+.columna-66 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+ }
+ 
+ /* Para dar un efecto de caja que se superpone en otras áreas */
+.columna-mover {
+    margin-top: -60px;
+    margin-bottom: -60px;
+ }
+
+#producto {
+    background-color: white;
+    color: black;
+ }
+ 
+ #producto-foto-contenedor {
     display: flex;
-}
-
-#cuadroo #byp {
-    background-color: #fc0000;
-    width: 220px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 20px 10px 20px;
-    color: rgb(255, 255, 255);
-    margin-top: 50px;
-    font-size: 20px;
-    box-shadow: 5px 5px 20px #fb0000;
-    text-overflow: clip;
-}
-
-
-
-/*articulo*/
-#frase {
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    color: #ff0000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-#cuadro1 {
-    background: url("imagen1.PNG");
-    height: 210px;
-    width: 390px;
-    background-size: contain;
-    background-size: cover;
-    background-position: right;
-    border-style: outset;
-    border-width: 2px 2px 0px 2px;
-}
-
-#cuadro1 #ldr {
-    background: #fb0000;
-    color: #ffffff;
-    width: 150px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 20px 10px 20px;
-    margin-top: 176px;
-    font-size: 12px;
-    margin-right: 190px;
-}
-
-#cuadro1 .titulot {
-    padding-left: 10px;
-    padding-top: 20px;
-    font-size: 20px;
-    color: #ff0000;
-    font-weight: bold;
-    padding-bottom: 15px;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-
-}
-
-#cuadro1 .letras {
-    font-size: 13px;
-    text-align: justify;
-    padding: 0px 150px 0px 10px;
-    font-weight: bold;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-
-}
-
-#cuadro1 .letras2 {
-    font-size: 13px;
-    text-align: justify;
-    color: #fc0000;
-    text-decoration: underline;
-    padding: 60px 0px 20px 210px;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 2px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-#cuadro2 {
-    background: url("imagen4.png");
-    height: 210px;
-    width: 390px;
-    background-size: contain;
-    background-size: cover;
-    border-style: outset;
-    border-width: 2px 2px 0px 2px;
-
-
-}
-
-#cuadro2 #ip {
-    background: #ff0000;
-    color: #ffffff;
-    width: 150px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 20px 10px 20px;
-    margin-top: 176px;
-    font-size: 12px;
-    margin-right: 190px;
-
-}
-
-#cuadro2 .titulot {
-    padding-left: 10px;
-    padding-top: 20px;
-    font-size: 20px;
-    color: #ff0000;
-    font-weight: bold;
-    padding-bottom: 15px;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-
-}
-
-#cuadro2 .letras {
-    font-size: 13px;
-    text-align: justify;
-    padding: 0px 100px 0px 10px;
-    font-weight: bold;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-#cuadro2 .letras2 {
-    font-size: 13px;
-    text-align: justify;
-    color: #fc0000;
-    text-decoration: underline;
-    padding: 60px 0px 20px 230px;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 2px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-#cuadro3 {
-    background: url("imagen5.png");
-    height: 210px;
-    width: 390px;
-    background-size: contain;
-    background-size: cover;
-    border-style: outset;
-    border-width: 2px 2px 0px 2px;
-
-
-}
-
-#cuadro3 #lmco {
-    background: #f90000;
-    color: #ffffff;
-    width: 180px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 20px 10px 20px;
-    margin-top: 176px;
-    font-size: 12px;
-    margin-right: 190px;
-}
-
-#cuadro3 .titulot {
-    padding-left: 10px;
-    padding-top: 20px;
-    font-size: 20px;
-    color: #ff0000;
-    font-weight: bold;
-    padding-bottom: 15px;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-#cuadro3 .letras {
-    font-size: 13px;
-    text-align: justify;
-    padding: 0px 100px 0px 10px;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 0px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-#cuadro3 .letras2 {
-    font-size: 13px;
-    text-align: justify;
-    color: #ff0000;
-    text-decoration: underline;
-    padding: 60px 0px 20px 210px;
-    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
-    border-style: outset;
-    border-width: 0px 2px 2px 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-}
-
-
-/*tabla*/
-
-.contenedor_mensaje .tituloi {
-    color: #2289ff;
-    text-align: justify;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    padding-bottom: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+ }
+ 
+ #producto-foto-descripcion {
     position: relative;
-    top: 10px;
-    text-shadow: 3px 3px 22px #2289ff;
-    text-overflow: clip;
-}
+ 
+    background-color: rgba(24, 41, 64, 0.8);
+    color: var(--color5);
+    width: 40%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+ 
+    /* Coordenadas */
+    top: 0px;  /* top / bottom */
+    right: 0px;  /* left / right */
+ }
 
-.contenedor_mensaje .parrafo {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    padding-bottom: 20px;
-    position: relative;
-    right: 60px;
-    top: 20px;
-}
-
-#tabla1 {
-    width: 800px;
-}
-
-#tabla1,
-th,
-td {
-    border: 1px solid rgb(238, 233, 233);
-    border-collapse: collapse;
-    padding: 5px 0px 5px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#tabla1 th {
-    background-color: #2289ff;
-    color: white;
-    font-size: 18px;
-}
-
-#tabla1 tr:nth-child(even) {
-    background-color: #c6ddf6;
-}
-
-
-
-/*articulo*/
-
-#land {
-    background-image: url(imagen1.png);
+ .espaciado {
+    padding-top: 90px;
+    padding-bottom: 90px;
+ }
+ 
+ #banner1 {
+    /* Imagen de fondo */
+    /* ../ permites salir a la carpeta padre para buscar archivos */
+    background-image: url("./293590082_5401960709852999_8926576943293560303_n.jpg");
+ 
+    /* Para que la imagen cubra toda el área que sea posible */
     background-size: cover;
-    height: 300px;
-    font-size: 40px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 20px;
+ 
+    /* Destaca la posición de la imagen que se desea mostrar
+    en la sección */
+    background-position: center; /* center top left right bottom */
+ 
+    /* Fija la imagen en contenedor con respecto al desplazamiento (scroll)
+    realizado en el navegador */
+    background-attachment: fixed;
+ 
+    /* Alineación del texto */
     text-align: left;
-}
-
-/*footer*/
-footer {
-    display: flex;
-    background-color: #fd0000;
-    height: 300px;
-    font-size: 10px;
     color: white;
+ }
+ /*footer*/
+footer{
+    display:flex;
+    background-color:#fd0000;
+    height: 300px;
+    font-size:10px;
+    color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 20px;
+    padding-top:20px;
     text-align: center;
-    margin-top: 5px;
+    margin-top:5px;
 
 }
 
 
-.foot #iconos {
-    display: flex;
-    width: 150px;
-    font-size: 20px;
+.foot #iconos{
+    display:flex;
+    width:150px;
+    font-size:20px;
     position: relative;
-    top: 12px;
+    top:12px;
 
 }
 
-.foot img {
+.foot img{
     height: 160px;
     border-radius: 6px;
-
+    
 }
 
 
-.foot {
-    width: 380px;
+.foot{
+    width:380px;
 }
 
 
-.foot .titulo {
-    text-align: center;
+.foot .titulo{
+   text-align: center;
     padding-bottom: 3px;
     padding-top: 8px;
-    color: #ffffff;
-    font-size: 16px;
+    color:#ffffff;
+    font-size:16px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.foot .titul {
-
+.foot .titul{
+   
     padding-bottom: 10px;
     padding-top: 15px;
-    color: #ffffff;
-    font-size: 16px;
+    color:#ffffff;
+    font-size:16px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 15px;
 }
-
-.foot .titul:hover {
+.foot .titul:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
     text-overflow: clip;
 }
 
-.caja1 p {
+.caja1 p{
     text-align: justify;
 }
 
-.foot .datos {
+.foot .datos{
     font-size: 16px;
-    color: #ffffff;
+    color:#ffffff;
     text-align: center;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.caja2 {
-    display: flex;
+.caja2{
+    display:flex;
 }
+
+ 
