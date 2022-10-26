@@ -1,0 +1,510 @@
+/*setear la pagina*/
+* {
+    margin: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+body {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+/*header*/
+#logo img {
+    height: 80px;
+    width: 80px;
+
+}
+
+header {
+    display: flex;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #f11004;
+}
+
+.titulo2 {
+    text-align: justify;
+    padding-bottom: 3px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 20%;
+
+}
+
+.imgs {
+    height: 90px;
+}
+
+.cuadro {
+    height: 90px;
+    line-height: 90px;
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.cuadro a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cuadro a:hover {
+    color: #e19390;
+    font-size: 13px;
+}
+
+.cuadro:hover {
+    color: #ce2626;
+    font-size: 13px;
+}
+
+.icon-sphere {
+    color: #ffffff;
+}
+
+.icon-users {
+    color: #ffffff;
+}
+
+.icon-facebook2 {
+    color: #ffffff;
+}
+
+.icon-instagram {
+    color: #ffffff;
+}
+
+.icon-youtube2 {
+    color: #ffffff;
+}
+
+section {
+    display: flex;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cuadrod {
+    height: 230px;
+    line-height: 80px;
+    width: 210px;
+    padding-bottom: 25px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 16px;
+}
+
+.cuadrod:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    font-size: 19px;
+}
+
+#texto-fotos {
+    margin-top: -50px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/*contener*/
+#contenedor {
+    display: flex;
+}
+
+.img1 img {
+    width: 1200px;
+
+}
+
+/*contenedor*/
+#contenedorr {
+    display: flex;
+}
+
+.img0 img {
+    width: 240px;
+}
+
+#frase {
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    color: #ffffff !important;
+    text-align: center;
+    background-color: #ff0000;
+    width: 100%;
+}
+
+#cuadro_central {
+    display: flex;
+}
+
+#cuadroo #byp {
+    background-color: #fc0000;
+    width: 220px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    font-size: 20px;
+    box-shadow: 5px 5px 20px #fb0000;
+    text-overflow: clip;
+}
+
+
+
+/*articulo*/
+#frase {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: #ff0000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#cuadro1 {
+    background: url("imagen1.PNG");
+    height: 210px;
+    width: 390px;
+    background-size: contain;
+    background-size: cover;
+    background-position: right;
+    border-style: outset;
+    border-width: 2px 2px 0px 2px;
+}
+
+#cuadro1 #ldr {
+    background: #fb0000;
+    color: #ffffff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    margin-top: 176px;
+    font-size: 12px;
+    margin-right: 190px;
+}
+
+#cuadro1 .titulot {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+
+}
+
+#cuadro1 .letras {
+    font-size: 13px;
+    text-align: justify;
+    padding: 0px 150px 0px 10px;
+    font-weight: bold;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+
+}
+
+#cuadro1 .letras2 {
+    font-size: 13px;
+    text-align: justify;
+    color: #fc0000;
+    text-decoration: underline;
+    padding: 60px 0px 20px 210px;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 2px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+#cuadro2 {
+    background: url("imagen4.png");
+    height: 210px;
+    width: 390px;
+    background-size: contain;
+    background-size: cover;
+    border-style: outset;
+    border-width: 2px 2px 0px 2px;
+
+
+}
+
+#cuadro2 #ip {
+    background: #ff0000;
+    color: #ffffff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    margin-top: 176px;
+    font-size: 12px;
+    margin-right: 190px;
+
+}
+
+#cuadro2 .titulot {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+
+}
+
+#cuadro2 .letras {
+    font-size: 13px;
+    text-align: justify;
+    padding: 0px 100px 0px 10px;
+    font-weight: bold;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+#cuadro2 .letras2 {
+    font-size: 13px;
+    text-align: justify;
+    color: #fc0000;
+    text-decoration: underline;
+    padding: 60px 0px 20px 230px;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 2px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+#cuadro3 {
+    background: url("imagen5.png");
+    height: 210px;
+    width: 390px;
+    background-size: contain;
+    background-size: cover;
+    border-style: outset;
+    border-width: 2px 2px 0px 2px;
+
+
+}
+
+#cuadro3 #lmco {
+    background: #f90000;
+    color: #ffffff;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    margin-top: 176px;
+    font-size: 12px;
+    margin-right: 190px;
+}
+
+#cuadro3 .titulot {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+#cuadro3 .letras {
+    font-size: 13px;
+    text-align: justify;
+    padding: 0px 100px 0px 10px;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 0px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+#cuadro3 .letras2 {
+    font-size: 13px;
+    text-align: justify;
+    color: #ff0000;
+    text-decoration: underline;
+    padding: 60px 0px 20px 210px;
+    font-family: 'Bahnschrift SemiBold', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-width: 0px 2px 2px 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+
+/*tabla*/
+
+.contenedor_mensaje .tituloi {
+    color: #2289ff;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 10px;
+    text-shadow: 3px 3px 22px #2289ff;
+    text-overflow: clip;
+}
+
+.contenedor_mensaje .parrafo {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    right: 60px;
+    top: 20px;
+}
+
+#tabla1 {
+    width: 800px;
+}
+
+#tabla1,
+th,
+td {
+    border: 1px solid rgb(238, 233, 233);
+    border-collapse: collapse;
+    padding: 5px 0px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tabla1 th {
+    background-color: #2289ff;
+    color: white;
+    font-size: 18px;
+}
+
+#tabla1 tr:nth-child(even) {
+    background-color: #c6ddf6;
+}
+
+
+
+/*articulo*/
+
+#land {
+    background-image: url(imagen1.png);
+    background-size: cover;
+    height: 300px;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    text-align: left;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    background-color: #fd0000;
+    height: 300px;
+    font-size: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+
+.foot #iconos {
+    display: flex;
+    width: 150px;
+    font-size: 20px;
+    position: relative;
+    top: 12px;
+
+}
+
+.foot img {
+    height: 160px;
+    border-radius: 6px;
+
+}
+
+
+.foot {
+    width: 380px;
+}
+
+
+.foot .titulo {
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot .titul {
+
+    padding-bottom: 10px;
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 15px;
+}
+
+.foot .titul:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+    text-overflow: clip;
+}
+
+.caja1 p {
+    text-align: justify;
+}
+
+.foot .datos {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja2 {
+    display: flex;
+}
